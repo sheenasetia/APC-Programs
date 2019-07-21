@@ -1,8 +1,7 @@
-#include <iostream>
-#include<climits>
+#include <stdio.h>
+#include <stdlib.h>
 //Max sum subarray (Approach 1(ii) : Brute Force ) -- O(n^2)
-using namespace std;
-int SubArray(int arr[],int n)
+int SubArray(int *arr,int n)
 {
     int sum=0,ans=arr[0];
     for(int i=0;i<n;i++)
@@ -23,6 +22,6 @@ int main()
 {
     int arr[5]={2,3,-4,8};
     int y=SubArray(arr,5);
-    cout<<y;
+    printf("%d",y);
     return 0;
 }
