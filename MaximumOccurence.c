@@ -1,10 +1,11 @@
+//find the maximum occured element in the given ranges
 #include <stdio.h>
 #include <stdlib.h>
 
 int Max_Occ(int *l,int *r,int n)
 {
     int max=l[0];
-    for(int i=0;i<n;i++)
+    for(int i=0;i<n;i++) //finding max
     {
         if(l[i]>max)
             max=l[i];
@@ -12,18 +13,18 @@ int Max_Occ(int *l,int *r,int n)
             max=r[i];
     }
     int arr[max+1];
-    for(int i=0;i<max+1;i++)
+    for(int i=0;i<max+1;i++) 
     {
         arr[i]=0;
     }
-    for(int i=0;i<n;i++)
+    for(int i=0;i<n;i++) //fillig array
     {
         arr[l[i]]++;
         arr[r[i]+1]--;
     }
     int prev=0;
     int m=0;
-    for(int i=0;i<max+1;i++)
+    for(int i=0;i<max+1;i++) //finding max occured num
     {
         if(prev+arr[i]>m)
         {
