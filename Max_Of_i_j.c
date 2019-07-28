@@ -1,4 +1,4 @@
-//find Max(j-i) such that A[j]>=A[i]
+//find the Max(j-i) such that A[j]>=A[i]
 #include <stdio.h>
 #include <stdlib.h>
 
