@@ -1,3 +1,5 @@
+//Rotating an array x times 
+//Approach :( x % size of array )rotations
 #include <stdio.h>
 #include <stdlib.h>
 
