@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-//Max sum subarray (Approach 1(ii) : Brute Force ) -- O(n^2)
+//Max sum contiguous subarray (Approach 1(ii) : Brute Force ) -- O(n^2)
 int SubArray(int *arr,int n)
 {
     int sum=0,ans=arr[0];
