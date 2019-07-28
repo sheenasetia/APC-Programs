@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-//remove duplicates from an array in O(n)
+//remove duplicates from a sorted array in O(n)
 int removeDuplicates(int* A, int n1) {  //returns new length of array
     int j=0,i;
     for(i=1;i<n1;i++)
