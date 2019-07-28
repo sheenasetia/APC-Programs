@@ -1,3 +1,5 @@
+//Merge the intervals which are intersecting
+//assume the ranges are sorted
 #include <stdio.h>
 #include <stdlib.h>
 struct Interval
