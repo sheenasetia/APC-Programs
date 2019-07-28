@@ -1,3 +1,4 @@
+//Reverse the array in a group of k
 #include <stdio.h>
 #include <stdlib.h>
 void swap(int *a,int *b)
@@ -19,7 +20,7 @@ void ReverseGroup(int *a,int n,int k)
         }
         else
         {
-            for(int j=0;j<(n-i)/2;j++)
+            for(int j=0;j<(n-i)/2;j++) //for the array with last imperfect group
             {
                 swap(&a[j+i],&a[n-1-j]);
             }
