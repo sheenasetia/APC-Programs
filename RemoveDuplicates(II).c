@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 //remove duplicates if occur more than twice :O(n)
+//Given array is sorted 
 int removeDuplicates(int* A, int n1) { //returns new length of array
     int j=0,c=1,i;
     for(i=1;i<n1;i++)
