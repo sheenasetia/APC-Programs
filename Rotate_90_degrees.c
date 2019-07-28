@@ -1,3 +1,4 @@
+//Rotate a 2-d array by 90 degrees
 #include <stdio.h>
 #include <stdlib.h>
 void Rotate_90(int m, int n,int a[m][n])
