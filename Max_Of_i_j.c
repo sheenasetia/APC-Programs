@@ -1,3 +1,4 @@
+//find Max(j-i) such that A[j]>=A[i]
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -20,12 +21,14 @@ int main()
        arr[i].index=i;
        scanf("%d",&arr[i].val);
    }
-   qsort(arr,n,sizeof(arr[0]),cmp);
+    //sorting for all A[j] will be >=A[i]
+   qsort(arr,n,sizeof(arr[0]),cmp);  //O(logn)
     for(int i=0;i<n;i++)
         printf("%d",arr[i].index);
     int min=arr[0].index;
     int max=0;
-    for(int i=0;i<n;i++)
+    //finding max(j-i)
+    for(int i=0;i<n;i++) //O(n)
     {
         if(arr[i].index-min>max)
         {
