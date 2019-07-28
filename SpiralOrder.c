@@ -1,11 +1,12 @@
+//Print array in spiral order
 #include <stdio.h>
 #include <stdlib.h>
 
 void Spiral_Order(int n,int arr[n][n])
 {
-    int dir,L,R,T,B;
-    dir=L=T=0;
-    R=B=(n-1);
+    int dir,L,R,T,B;  //(using for variables)
+    dir=L=T=0;         // setting left and top=0
+    R=B=(n-1);          // setting right and bottom = n-1
     while(L<=R && T<=B)
     {
         if(dir==0)
