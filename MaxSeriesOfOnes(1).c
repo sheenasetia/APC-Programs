@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-//find series of max ones when u can flip B zeros
+//Find series of max ones when u can flip B zeros
 //sliding window protocol approach
 int* maxone(int* A, int n1, int B, int *len1) { //returns array of indices series having max ones
 int r=0,l=0,c=0,max=0,a=0,b=0;
